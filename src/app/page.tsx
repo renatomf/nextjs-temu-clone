@@ -1,7 +1,15 @@
-export default function Home() {
+import { getCurrentSession } from "@/actions/auth";
+
+const Home = async () => {
+
+  const { user } = await getCurrentSession();
+
+
   return (
     <div>
-      Home Page
+      {JSON.stringify(user)}
     </div>
   );
 }
+
+export default Home;
