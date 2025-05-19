@@ -2,7 +2,7 @@
 
 import { useRouter } from "next/navigation";
 
-export const SalesCampaingBanner = () => {
+export const SalesCampaignBanner = () => {
   const router = useRouter();
 
   return (
@@ -39,3 +39,5 @@ export const SalesCampaingBanner = () => {
     </div>
   );
 };
+
+export default SalesCampaignBanner;
